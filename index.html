@@ -1,0 +1,916 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tire</title>
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/main.css">
+
+
+
+
+      <!-- Google Analytics -->
+      <script type="text/javascript">
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', '&quot;UA-20991800-7&quot;']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+
+      </script>
+
+
+    <!-- Typekit -->
+
+      <script type="text/javascript">
+        (function() {
+          var config = {
+            kitId: 'hjp0pft',
+            scriptTimeout: 3000
+          };
+          var h=document.getElementsByTagName("html")[0];h.className+=" wf-loading";var t=setTimeout(function(){h.className=h.className.replace(/( |^)wf-loading( |$)/g,"");h.className+=" wf-inactive"},config.scriptTimeout);var tk=document.createElement("script");tk.src='//use.typekit.net/'+config.kitId+'.js';tk.type="text/javascript";tk.async="true";tk.onload=tk.onreadystatechange=function(){var a=this.readyState;if(a&&a!="complete"&&a!="loaded")return;clearTimeout(t);try{Typekit.load(config)}catch(b){}};var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(tk,s)
+        })();
+      </script>
+
+  </head>
+  <body><div id="container">
+  <div id="nav">
+
+      <div id="header">
+        <a href="#" id="logo">Tire</a>
+      </div>
+
+    <ul id="sections">
+
+        <li>
+          <a href="#why-did-we-create-tire">Why did we create Tire?</a>
+
+        </li>
+
+        <li>
+          <a href="#browser-support">Browser support</a>
+
+            <ul>
+
+                <li>
+                  <a href="#browser-support/older-browsers">Older browsers</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li>
+          <a href="#why-don-t-you-have-this-method">Why don't you have this method?</a>
+
+        </li>
+
+        <li>
+          <a href="#download">Download</a>
+
+        </li>
+
+        <li>
+          <a href="#core">Core</a>
+
+            <ul>
+
+                <li>
+                  <a href="#core/">$()</a>
+                </li>
+
+                <li>
+                  <a href="#core/each">$.each</a>
+                </li>
+
+                <li>
+                  <a href="#core/extend">$.extend</a>
+                </li>
+
+                <li>
+                  <a href="#core/isarray">$.isArray</a>
+                </li>
+
+                <li>
+                  <a href="#core/isfunction">$.isFunction</a>
+                </li>
+
+                <li>
+                  <a href="#core/isnumeric">$.isNumeric</a>
+                </li>
+
+                <li>
+                  <a href="#core/isstring">$.isString</a>
+                </li>
+
+                <li>
+                  <a href="#core/isobject">$.isObject</a>
+                </li>
+
+                <li>
+                  <a href="#core/isplainobject">$.isPlainObject</a>
+                </li>
+
+                <li>
+                  <a href="#core/iswindow">$.isWindow</a>
+                </li>
+
+                <li>
+                  <a href="#core/matches">$.matches</a>
+                </li>
+
+                <li>
+                  <a href="#core/noconflict">$.noConflict</a>
+                </li>
+
+                <li>
+                  <a href="#core/slice">$.slice</a>
+                </li>
+
+                <li>
+                  <a href="#core/trim">$.trim</a>
+                </li>
+
+                <li>
+                  <a href="#core/parsejson">$.parseJSON</a>
+                </li>
+
+                <li>
+                  <a href="#core/addclass">addClass</a>
+                </li>
+
+                <li>
+                  <a href="#core/after">after</a>
+                </li>
+
+                <li>
+                  <a href="#core/append">append</a>
+                </li>
+
+                <li>
+                  <a href="#core/attr">attr</a>
+                </li>
+
+                <li>
+                  <a href="#core/before">before</a>
+                </li>
+
+                <li>
+                  <a href="#core/children">children</a>
+                </li>
+
+                <li>
+                  <a href="#core/clone">clone</a>
+                </li>
+
+                <li>
+                  <a href="#core/closest">closest</a>
+                </li>
+
+                <li>
+                  <a href="#core/css">css</a>
+                </li>
+
+                <li>
+                  <a href="#core/data">data</a>
+                </li>
+
+                <li>
+                  <a href="#core/each">each</a>
+                </li>
+
+                <li>
+                  <a href="#core/empty">empty</a>
+                </li>
+
+                <li>
+                  <a href="#core/eq">eq</a>
+                </li>
+
+                <li>
+                  <a href="#core/filter">filter</a>
+                </li>
+
+                <li>
+                  <a href="#core/find">find</a>
+                </li>
+
+                <li>
+                  <a href="#core/get">get</a>
+                </li>
+
+                <li>
+                  <a href="#core/hasclass">hasClass</a>
+                </li>
+
+                <li>
+                  <a href="#core/hide">hide</a>
+                </li>
+
+                <li>
+                  <a href="#core/html">html</a>
+                </li>
+
+                <li>
+                  <a href="#core/is">is</a>
+                </li>
+
+                <li>
+                  <a href="#core/not">not</a>
+                </li>
+
+                <li>
+                  <a href="#core/parent">parent</a>
+                </li>
+
+                <li>
+                  <a href="#core/pluck">pluck</a>
+                </li>
+
+                <li>
+                  <a href="#core/prepend">prepend</a>
+                </li>
+
+                <li>
+                  <a href="#core/ready">ready</a>
+                </li>
+
+                <li>
+                  <a href="#core/remove">remove</a>
+                </li>
+
+                <li>
+                  <a href="#core/removeattr">removeAttr</a>
+                </li>
+
+                <li>
+                  <a href="#core/removeclass">removeClass</a>
+                </li>
+
+                <li>
+                  <a href="#core/show">show</a>
+                </li>
+
+                <li>
+                  <a href="#core/text">text</a>
+                </li>
+
+                <li>
+                  <a href="#core/val">val</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li>
+          <a href="#ajax">Ajax</a>
+
+            <ul>
+
+                <li>
+                  <a href="#ajax/ajax">$.ajax</a>
+                </li>
+
+                <li>
+                  <a href="#ajax/param">$.param</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li>
+          <a href="#event">Event</a>
+
+            <ul>
+
+                <li>
+                  <a href="#event/on">on</a>
+                </li>
+
+                <li>
+                  <a href="#event/off">off</a>
+                </li>
+
+                <li>
+                  <a href="#event/trigger">trigger</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li>
+          <a href="#changelog">Changelog</a>
+
+        </li>
+
+        <li>
+          <a href="#thanks">Thanks</a>
+
+        </li>
+
+        <li>
+          <a href="#copyright">Copyright</a>
+
+        </li>
+
+    </ul>
+
+
+  </div>
+  <div id="content">
+
+    <h1>Tire</h1>
+<p>Tire is a lightweight JavaScript library for modern browsers. The goal is to create a framework that&#39;s around 12-15kb minified and 5kb minified and gzipped. The syntax is inspired from jQuery. It&#39;s modular so you can extend it however you like, also replace our features with your own.
+
+</p>
+<p>Fixes for older browsers increase the file size and we don&#39;t want that. So if you like a library to support Internet Explorer 6 or 7, Tire isn&#39;t for you.
+
+</p>
+<p>That said, all features can probably be rewritten/extended to add support for old browsers. In that case, you have to create a fork of Tire and fix it yourself.
+
+</p>
+<h2 id='why-did-we-create-tire'>Why did we create Tire?</h2 id='why-did-we-create-tire'>
+<p>To offer a more lightweight alternative to libraries such as jQuery, Prototype and Zepto. Sometimes you just need the most basic features and that&#39;s where Tire comes into the picture.
+
+</p>
+<h2 id='browser-support'>Browser support</h2 id='browser-support'>
+<ul>
+<li>Chrome</li>
+<li>Safari 4.0.5</li>
+<li>Internet Explorer 8</li>
+<li>Firefox 3.5</li>
+<li>Opera 10</li>
+</ul>
+<h3 id='browser-support/older-browsers'>Older browsers</h3 id='browser-support/older-browsers'>
+<p>Tire doesn&#39;t support Internet Explorer 6 or 7 as it would increase the file size.
+
+</p>
+<h2 id='why-don-t-you-have-this-method'>Why don&#39;t you have this method?</h2 id='why-don-t-you-have-this-method'>
+<p>We don&#39;t want to create a jQuery or Prototype clone. Nor do we want a big file size. Those are the biggest reasons we don&#39;t support all methods.
+
+</p>
+<p>If you think that Tire need a certain method please create an <a href="http://github.com/tirejs/tire/issues">issue</a> and tell us why!
+
+</p>
+<h2 id='download'>Download</h2 id='download'>
+<p>Current release: 1.1.1
+
+</p>
+<ul>
+<li><a href="http://code.tirejs.com/dist/all/tire-1.1.1.js">tire.js</a> - <em>35kB uncompressed (lots of comments), for development</em></li>
+<li><a href="http://code.tirejs.com/dist/all/tire-1.1.1.min.js">tire.min.js</a> - <em>4.5kB when gzipped, for production</em></li>
+</ul>
+<p>Please do not hotlink directly to the files hosted on <a href="http://code.tirejs.com">code.tirejs.com</a>. Download a local copy instead.
+
+</p>
+<p><a href="http://github.com/tirejs/tire">Source on GitHub</a>
+
+</p>
+<h2 id='core'>Core</h2 id='core'>
+<h3 id='core/'>$()</h3 id='core/'>
+<p><span class="us">$(selector [, context])</span> <span class="re">Tire</span>
+
+</p>
+<p><code>$()</code> is just a shortcut for <code>tire()</code>. If another framework or library is using <code>$()</code> and you like to continue to use it, you can use tire&#39;s <code>$.noConflict()</code> to fix it.
+
+</p>
+<p>This function is used to create Tire collections, wrapp DOM nodes or create elements from HTML string. Tire support the basic selectors, but in a modern browser advanced selectors are supported as well via <code>document.querySelectorAll</code>.
+
+</p>
+<p>The function will take two parameters, the first is a selector and the second is the context (or attribute object) where you are searching for the DOM node. If no context is given the context will be <code>document</code>. If a tire collection is given it will just return the given collection.
+
+</p>
+<pre><code class="javascript">$(<span class="string">'#foo'</span>) <span class="comment">// returns the element with the id foo</span>
+
+$(<span class="string">'.bar'</span>) <span class="comment">// returns all elements with the class name bar.</span>
+
+$(<span class="string">'p'</span>) <span class="comment">// returns all elements with the tag name p.</span>
+
+<span class="comment">// More advanced selectors via document.querySelectorAll.</span>
+
+$(<span class="string">'input[type=text]'</span>) <span class="comment">// returns all input elements with the type text.</span>
+
+$(<span class="string">'a, div'</span>) <span class="comment">// returns all a and div elements;</span>
+
+$(<span class="string">'ul li'</span>) <span class="comment">// returns all li elements that are inside an ul tag.</span>
+
+$(<span class="string">'ol > li'</span>) <span class="comment">// the same as above but for ol tag.</span>
+
+$(<span class="string">'&lt;a />'</span>, { href: <span class="string">'#'</span>, title: <span class="string">'a'</span> }); <span class="comment">// Add attributes to the tag (1.1.1+).</span></code></pre>
+<p>If a function is given it will be used as a callback for the dom ready event. <code>$(function () {})</code> is a shortcut for <code>$.ready()</code> or <code>$().ready</code>. When the dom is ready, the function is executed.
+
+</p>
+<h3 id='core/each'>$.each</h3 id='core/each'>
+<p><span class="us">$.each(object, callback)</span> <span class="re">collection</span>
+
+</p>
+<p>Iterate over array items or object key-value pairs.
+
+</p>
+<pre><code class="javascript">$.each([<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>], <span class="function"><span class="keyword">function</span> <span class="params">(index, item)</span> {</span>
+  <span class="comment">// Item is 1, 2, 3 and so on. Index is the position in the array</span>
+});
+
+$.each({ hello: <span class="string">'world'</span> }, <span class="function"><span class="keyword">function</span> <span class="params">(key, value)</span> {</span>
+  <span class="comment">// Key is `hello` and value is `world`</span>
+});</code></pre>
+<h3 id='core/extend'>$.extend</h3 id='core/extend'>
+<p><span class="us">$.extend(target, [source [, source2, ..]])</span> <span class="re">target</span>
+
+</p>
+<p>Extends target with members of other objects.
+
+</p>
+<h3 id='core/isarray'>$.isArray</h3 id='core/isarray'>
+<p><span class="us">$.isArray(object)</span> <span class="re">boolean</span>
+
+</p>
+<p>Returns true if the given object is an array. <em>(Before 1.1.1 the name was $.isArr)</em>
+
+</p>
+<h3 id='core/isfunction'>$.isFunction</h3 id='core/isfunction'>
+<p><span class="us">$.isFunction(object)</span> <span class="re">boolean</span>
+
+</p>
+<p>Returns true if the given object is a function. <em>(Before 1.1.1 the name was $.isFun)</em>
+
+</p>
+<h3 id='core/isnumeric'>$.isNumeric</h3 id='core/isnumeric'>
+<p><span class="us">$.isNumeric(object)</span> <span class="re">boolean</span>
+
+</p>
+<p>Returns true if the given object is a number. <em>(Before 1.1.1 the name was $.isNum)</em>
+
+</p>
+<h3 id='core/isstring'>$.isString</h3 id='core/isstring'>
+<p><span class="us">$.isString(object)</span> <span class="re">boolean</span>
+
+</p>
+<p>Returns true if the given object is a string. <em>(Before 1.1.1 the name was $.isStr)</em>
+
+</p>
+<h3 id='core/isobject'>$.isObject</h3 id='core/isobject'>
+<p><span class="us">$.isObject(object)</span> <span class="re">boolean</span>
+
+</p>
+<p>Returns true if the given object is an object. <em>(Before 1.1.1 the name was $.isObj)</em>
+
+</p>
+<h3 id='core/isplainobject'>$.isPlainObject</h3 id='core/isplainobject'>
+<p><span class="us">$.isPlainObject(object)</span> <span class="re">boolean</span>
+
+</p>
+<p>Returns true if the given object is a plain object.
+
+</p>
+<h3 id='core/iswindow'>$.isWindow</h3 id='core/iswindow'>
+<p><span class="us">$.isWindow(object)</span> <span class="re">boolean</span>
+
+</p>
+<p>Returns true if the given object is the window object.
+
+</p>
+<h3 id='core/matches'>$.matches</h3 id='core/matches'>
+<p><span class="us">$.matches(element, selector)</span> <span class="re">boolean</span>
+
+</p>
+<p>Returns true if the given element matches the given selector. <code>$().is(selector)</code> is an alias for it.
+
+</p>
+<h3 id='core/noconflict'>$.noConflict</h3 id='core/noconflict'>
+<p><span class="us">$.noConflict([name])</span> <span class="re">Tire</span>
+
+</p>
+<p>Many JavaScript libraries use <code>$</code> as a function or variable name, just as Tire does. If you like to use another JavaScript library alongside Tire, we can return control back of <code>$</code> to the other library with <code>$.noConflict</code>.
+
+</p>
+<p>If true is given as a parameter it will return control back to <code>Tire</code> if some other library is using it as variabel or function name.
+
+</p>
+<h3 id='core/slice'>$.slice</h3 id='core/slice'>
+<p><span class="us">$.slice(array [, begin])</span> <span class="re">array</span>
+
+</p>
+<p>Returns a one-level deep copy of a portion of an array. The real <code>Array.slice</code> can take an end argument too, but <code>$.slice</code> can&#39;t. You can read more about <code>Array.slice</code> on <a href="https://developer.mozilla.org/en/JavaScript/Reference/Global_Objects/Array/slice">Mozilla Developer Network</a>
+
+</p>
+<h3 id='core/trim'>$.trim</h3 id='core/trim'>
+<p><span class="us">$.trim(string)</span> <span class="re">string</span>
+
+</p>
+<p>The trim method returns the string stripped of whitespace from both ends. It does not affect the value of the string.
+
+</p>
+<h3 id='core/parsejson'>$.parseJSON</h3 id='core/parsejson'>
+<p><span class="us">$.parseJSON(string)</span> <span class="re">object or null</span>
+
+</p>
+<p>Parse JSON string to JSON object. This will also work for older browsers that don&#39;t include <code>JSON</code>.
+
+</p>
+<pre><code class="javascript">$.parseJSON(<span class="string">'{"a":"b"}'</span>) <span class="comment">// Returns { "a": "b"} as an object</span></code></pre>
+<h3 id='core/addclass'>addClass</h3 id='core/addclass'>
+<p><span class="us">.addClass(name)</span> <span class="re">Tire</span>
+
+</p>
+<p>Add class name to the selected elements. Multiple class names can be given in a space-separated string.
+
+</p>
+<h3 id='core/after'>after</h3 id='core/after'>
+<p><span class="us">.after(html)</span> <span class="re">Tire</span>
+
+</p>
+<p>Add html to the DOM after each element in the collection. The html can be HTML string or Tire collection.
+
+</p>
+<h3 id='core/append'>append</h3 id='core/append'>
+<p><span class="us">.append(html)</span> <span class="re">Tire</span>
+
+</p>
+<p>Append html to the DOM inside each element in the collection. The html can be a HTML string or Tire collection.
+
+</p>
+<h3 id='core/attr'>attr</h3 id='core/attr'>
+<p><span class="us">.attr(name [, value])</span> <span class="re">value or Tire</span>
+
+</p>
+<p>Read or set DOM attributes. When no value is given it will read specified attribute from the first element and return the value of it. When a value is given, it sets the attribute to that value on each element in the collection.
+
+</p>
+<p>The first argument of <code>.attr</code> can be an object containing all attributes. <span class="version">(1.1.1+)</span>
+
+</p>
+<pre><code class="javascript">$(<span class="string">'&lt;a />'</span>).attr(<span class="string">'href'</span>, <span class="string">'#'</span>);
+$(<span class="string">'&lt;a />'</span>).attr({ href: <span class="string">'#'</span> });</code></pre>
+<h3 id='core/before'>before</h3 id='core/before'>
+<p><span class="us">.before(html)</span> <span class="re">Tire</span>
+
+</p>
+<p>Add html to the DOM before each element in the collection. The html can be a HTML string or Tire collection.
+
+</p>
+<h3 id='core/children'>children</h3 id='core/children'>
+<p><span class="us">.children([selector])</span> <span class="re">Tire</span>
+
+</p>
+<p>Get immediate children of each element in the current collection. If a selector is given, it filters the results to only include the ones matching the CSS selector.
+
+</p>
+<h3 id='core/clone'>clone</h3 id='core/clone'>
+<p><span class="us">.clone()</span> <span class="re">Tire</span> <span class="version">(1.1.1+)</span>
+
+</p>
+<p>Duplicate all elements in the Tire collection via deep clone. This method doesn&#39;t have an option for copying data and event handlers over to the new elements, as it has in jQuery.
+
+</p>
+<h3 id='core/closest'>closest</h3 id='core/closest'>
+<p><span class="us">.closest(selector [, context])</span> <span class="re">Tire</span>
+
+</p>
+<p>Get the first element that matches the selector, beginning at the current element and progressing up through the DOM tree. Context can be a DOM element in which a matching element may be found. If no context is passed in then the context of the jQuery set will be used instead.
+
+</p>
+<h3 id='core/css'>css</h3 id='core/css'>
+<p><span class="us">.css(property [, value])</span> <span class="re">value or Tire</span>
+
+</p>
+<p>Read or set CSS properties on DOM elements. When no value is given it will read specified CSS property from the first element and return the value of it. When a value is given, it sets the property to that value on each element in the collection.
+
+</p>
+<h3 id='core/data'>data</h3 id='core/data'>
+<p><span class="us">.data(name [, value])</span> <span class="re">value or Tire</span> <span class="version">(1.1.1+)</span>
+
+</p>
+<p>Works just like <code>.attr(name [, value])</code> but only for <code>data-*</code> attributes. This implementation only stores strings.
+
+</p>
+<p>When setting data:
+
+</p>
+<ul>
+<li>Objects and arrays will be converted to JSON strings.</li>
+<li>Numbers, boolean and null will be converted to strings.</li>
+</ul>
+<p>When reading data:
+
+</p>
+<ul>
+<li>&quot;true&quot; will be converted to true.</li>
+<li>&quot;false&quot; will be converted to false.</li>
+<li>&quot;null&quot; will be converted to null.</li>
+<li>JSON strings will be converted to objects or arrays.</li>
+<li>String numbers will be converted to numbers.</li>
+</ul>
+<h3 id='core/each'>each</h3 id='core/each'>
+<p><span class="us">.each(callback)</span> <span class="re">Tire</span>
+
+</p>
+<p>Iterates trough every element in the collection. Inside the iterator function, the <code>this</code> keyword refers to the current item. If the iterator function returns <code>false</code> it will stop the iteration. Returns the Tire collection.
+
+</p>
+<pre><code class="javascript">$(<span class="string">'div'</span>).each(<span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+  $(<span class="keyword">this</span>).trigger(<span class="string">'tap'</span>);
+});</code></pre>
+<h3 id='core/empty'>empty</h3 id='core/empty'>
+<p><span class="us">.empty()</span> <span class="re">Tire</span>
+
+</p>
+<p>Clear DOM contents of each element in the collection. Returns the Tire collection.
+
+</p>
+<h3 id='core/eq'>eq</h3 id='core/eq'>
+<p><span class="us">.eq(index)</span> <span class="re">Tire</span>
+
+</p>
+<p>Get the element at position specified by index from the current collection.
+
+</p>
+<pre><code class="javascript">$(<span class="string">'div'</span>).eq(<span class="number">0</span>); <span class="comment">//=> Returns the first element</span></code></pre>
+<p>It&#39;s easy to extend Tire with <code>.first()</code> and <code>.last()</code> with <code>.eq(index)</code>.
+
+</p>
+<pre><code class="javascript">(<span class="function"><span class="keyword">function</span> <span class="params">($)</span> {</span>
+  $.extend($.fn, {
+    first: <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span> <span class="keyword">return</span> <span class="keyword">this</span>.eq(<span class="number">0</span>); },
+    last: <span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span> <span class="keyword">return</span> <span class="keyword">this</span>.eq(-<span class="number">1</span>); }
+  });
+}(tire));</code></pre>
+<h3 id='core/filter'>filter</h3 id='core/filter'>
+<p><span class="us">.filter(object)</span> <span class="re">Tire</span>
+
+</p>
+<p>Extend Tire with custom filters. Inside the iterator function, the <code>this</code> keyword refers to the current item. If a string is given it will return all elements in the collection matching that selector.
+
+</p>
+<pre><code class="javascript"><span class="comment">// Returns all elements with the class `tire`</span>
+$(<span class="string">'div'</span>).filter(<span class="function"><span class="keyword">function</span> <span class="params">()</span> {</span>
+  <span class="keyword">if</span> ($(<span class="keyword">this</span>).hasClass(<span class="string">'tire'</span>)) <span class="keyword">return</span> <span class="keyword">this</span>;
+});
+
+$(<span class="string">'div'</span>).filter(<span class="string">'.wrapper'</span>); <span class="comment">// Returns all elements with CSS class name .wrapper</span></code></pre>
+<h3 id='core/find'>find</h3 id='core/find'>
+<p><span class="us">.find(selector)</span> <span class="re">Tire</span>
+
+</p>
+<p>Find elements that match a CSS selector executed in the scope of nodes in the current collection.
+
+</p>
+<h3 id='core/get'>get</h3 id='core/get'>
+<p><span class="us">.get(index)</span> <span class="re">DOM element</span> <span class="version">(1.1.1+)</span>
+
+</p>
+<p>Retrieve the DOM elements matched by the Tire object.
+
+</p>
+<pre><code class="javascript">$(<span class="string">'div'</span>).get(<span class="number">0</span>) <span class="comment">// returns the first div tag</span>
+
+$(<span class="string">'div'</span>).get() <span class="comment">// returns an array with all the div tags</span></code></pre>
+<h3 id='core/hasclass'>hasClass</h3 id='core/hasclass'>
+<p><span class="us">.hasClass(name)</span> <span class="re">boolean</span>
+
+</p>
+<p>Check if the first element in the collection has the specified class.
+
+</p>
+<h3 id='core/hide'>hide</h3 id='core/hide'>
+<p><span class="us">.hide()</span> <span class="re">Tire</span>
+
+</p>
+<p>Hide each element in the collection by setting CSS <code>display</code> to <code>none</code>.
+
+</p>
+<h3 id='core/html'>html</h3 id='core/html'>
+<p><span class="us">.html([html])</span> <span class="re">string or Tire</span>
+
+</p>
+<p>Read or set HTML contents of elements in the collection. When no html is given it will return <code>innerHTML</code> of the first element. When html is given it used to replace <code>innerHTML</code> of each element in the collection. The html can be a HTML string or Tire collection.
+
+</p>
+<h3 id='core/is'>is</h3 id='core/is'>
+<p><span class="us">.is(selector)</span> <span class="re">boolean</span>
+
+</p>
+<p>Returns true if the given element matches the given CSS selector. <a href="http://api.jquery.com/category/selectors/jquery-selector-extensions/">jQuery CSS extensions</a> are not supported. Some will be supported later.
+
+</p>
+<h3 id='core/not'>not</h3 id='core/not'>
+<p><span class="us">.not(selector)</span> <span class="re">Tire</span>
+
+</p>
+<p>Filter the current collection to get a new collection of elements that don&#39;t match the CSS selector.
+
+</p>
+<h3 id='core/parent'>parent</h3 id='core/parent'>
+<p><span class="us">.parent([selector])</span> <span class="re">Tire</span>
+
+</p>
+<p>Get immediate parents of each element in the collection. If CSS selector is given, filter results to include only ones matching the selector.
+
+</p>
+<h3 id='core/pluck'>pluck</h3 id='core/pluck'>
+<p><span class="us">.pluck(property)</span> <span class="re">array</span>
+
+</p>
+<p>Get values from a named property of each element in the collection. <code>null</code> and <code>undefined</code> will be removed before returning the array.
+
+</p>
+<pre><code class="javascript">$(<span class="string">'span'</span>).pluck(<span class="string">'nodeName'</span>) <span class="comment">//=> ['SPAN', 'SPAN']</span></code></pre>
+<h3 id='core/prepend'>prepend</h3 id='core/prepend'>
+<p><span class="us">.prepend(html)</span> <span class="re">Tire</span>
+
+</p>
+<p>Prepend content to the DOM inside each element in the collection. The html can be a HTML string or Tire collection.
+
+</p>
+<h3 id='core/ready'>ready</h3 id='core/ready'>
+<p><span class="us">.ready(callback)</span> <span class="re">Tire</span>
+
+</p>
+<p>Attach an event handler for the <code>DOMContentLoaded</code> or <code>onreadystatechange</code> event that fires when the DOM on the page is ready.
+
+</p>
+<h3 id='core/remove'>remove</h3 id='core/remove'>
+<p><span class="us">.remove()</span> <span class="re">Tire</span>
+
+</p>
+<p>Remove all elements in the collection from their parent nodes, effectively detaching them from the DOM.
+
+</p>
+<h3 id='core/removeattr'>removeAttr</h3 id='core/removeattr'>
+<p><span class="us">.removeAttr(name)</span> <span class="re">Tire</span>
+
+</p>
+<p>Remove the specified attribute from all elements in the collection.
+
+</p>
+<h3 id='core/removeclass'>removeClass</h3 id='core/removeclass'>
+<p><span class="us">.removeClass(name)</span> <span class="re">Tire</span>
+
+</p>
+<p>Remove the specified class name from all elements in the collection.
+
+</p>
+<h3 id='core/show'>show</h3 id='core/show'>
+<p><span class="us">.show()</span> <span class="re">Tire</span>
+
+</p>
+<p>Restore the default value of CSS <code>display</code> property for each element in the collection.
+
+</p>
+<h3 id='core/text'>text</h3 id='core/text'>
+<p><span class="us">.text(content)</span> <span class="re">value or Tire</span>
+
+</p>
+<p>Get or set text content of each element in the collection. When no content is given it returns text content for the first element. When content is given it sets <code>textContent</code> for each element in the collection.
+
+</p>
+<h3 id='core/val'>val</h3 id='core/val'>
+<p><span class="us">.val(value)</span> <span class="re">value or Tire</span>
+
+</p>
+<p>Get or set the value of form controls. When no value is given, it returns the value of the first element. For <code>&lt;select multiple&gt;</code>, an array of values is returned.
+
+</p>
+<h2 id='ajax'>Ajax</h2 id='ajax'>
+<h3 id='ajax/ajax'>$.ajax</h3 id='ajax/ajax'>
+<p><span class="us">$.ajax(options [, callback])</span> <span class="re">Tire</span>
+
+</p>
+<p>Perform an Ajax request. It can be a to local resource or JSONP. No support for cross-domain (yet). It´s a async Ajax request, no sync request is supported and no support is planned.
+
+</p>
+<p>If a string is passed in as the first argument it will be the URL to request. The seconds argument should be a function that is used as success function if the request succeeds.
+
+</p>
+<p>If a URL contains <code>callback=?</code>, <code>callback=string</code> or <code>dataType</code> is <code>jsonp</code> it will be a JSONP request. The response data will automatic be parsed as a JSON object if it&#39;s a JSONP or JSON request.
+
+</p>
+<p>Options
+
+</p>
+<ul>
+<li><code>type</code> HTTP request method. GET is default.</li>
+<li><code>url</code> URL to which the request is made.</li>
+<li><code>data</code> Data for the request. Non-string objects will get serialized with <code>$.param</code></li>
+<li><code>contentType</code> Which content type to post to server. Default is <code>application/x-www-form-urlencoded</code>.</li>
+<li><code>dataType</code> Response type to expect from the server. Default is none. Can be <code>json, jsonp, xml, html, text</code>.</li>
+<li><code>headers</code> Object of additional HTTP headers for the Ajax request.</li>
+<li><code>success</code> The function to execute when the request is done with data as a argument.</li>
+<li><code>error</code> The function to execute on error with error arguments.</li>
+</ul>
+<p>Options like <code>async, global, context</code> and <code>timeout</code> isn&#39;t supported. <code>timeout</code> will be supported later and maybe <code>context</code>.
+
+</p>
+<pre><code class="javascript">$.ajax(<span class="string">'http://echojson.com/hello/world?callback=?'</span>, <span class="function"><span class="keyword">function</span> <span class="params">(data)</span> {</span>
+  console.log(<span class="string">'Hello %s!'</span>, data.hello);
+});</code></pre>
+<h3 id='ajax/param'>$.param</h3 id='ajax/param'>
+<p><span class="us">$.param(object)</span> <span class="re">string</span>
+
+</p>
+<p>Serialize an object to a URL-encoded string representation for use in Ajax request query strings and post data.
+
+</p>
+<pre><code class="javascirpt">$<span class="variable">.param</span>({ num: [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>] })
+<span class="comment">// => "num[]=1&amp;num[]=2&amp;num[]=3"</span></code></pre>
+<h2 id='event'>Event</h2 id='event'>
+<h3 id='event/on'>on</h3 id='event/on'>
+<p><span class="us">.on(eventName, callback)</span> <span class="re">Tire</span>
+
+</p>
+<p>Add an event handler function to one or more events to the selected elements. The event handler have one parameter, the event itself. Tire don&#39;t have any support for delegate events (yet).
+</p>
+<pre><code class="javascript">$(<span class="string">'a'</span>).on(<span class="string">'click'</span>, <span class="function"><span class="keyword">function</span> <span class="params">(e)</span> {</span>
+  <span class="comment">// Add on click event to all anchor elements</span>
+});
+
+$(<span class="string">'a'</span>).on(<span class="string">'click touchstart'</span>, <span class="function"><span class="keyword">function</span> <span class="params">(e)</span> {</span>
+  <span class="comment">// Add on click and tap event to all anchor elements</span>
+});</code></pre>
+<h3 id='event/off'>off</h3 id='event/off'>
+<p><span class="us">.off(eventName [, callback])</span> <span class="re">Tire</span>
+
+</p>
+<p>Remove all event handler or a specified one from the selected elements. Tire don&#39;t have any support for undelegate events (yet).
+
+</p>
+<pre><code class="javascript"><span class="comment">// Remove all click events from anchor elements</span>
+$(<span class="string">'a'</span>).off(<span class="string">'click'</span>);
+
+<span class="comment">// Remove both click and tap events from anchor elements</span>
+$(<span class="string">'a'</span>).off(<span class="string">'click tap'</span>);
+
+<span class="comment">// Remove specified click event handler from anchor elements</span>
+$(<span class="string">'a'</span>).off(<span class="string">'click'</span>, eventHandler);</code></pre>
+<h3 id='event/trigger'>trigger</h3 id='event/trigger'>
+<p><span class="us">.trigger(eventName)</span> <span class="re">Tire</span>
+
+</p>
+<p>Trigger the specified event on elements collection. Tire don&#39;t have any support for passing on data via trigger.
+Trigger only takes one event name and not multiple like <code>on</code> and <code>off</code>.
+
+</p>
+<pre><code class="javascript">$(<span class="string">'a'</span>).trigger(<span class="string">'click'</span>);</code></pre>
+<h2 id='changelog'>Changelog</h2 id='changelog'>
+<h5>1.1.1</h5>
+<ul>
+<li><code>.each()</code> works correct now for arrays.</li>
+<li>Combined selectors for .find()` are now working properly</li>
+<li>Bug fix for .text()` for Internet Explorer 8.</li>
+<li><code>.html()</code>, <code>.append()</code>, <code>.prepend()</code>, <code>.before()</code> and <code>.after()</code> now works with Tire collections.</li>
+</ul>
+<h5>1.1.0</h5>
+<ul>
+<li><code>$(selector, attributes)</code> and <code>$().attr(object)</code> works.</li>
+<li>Added <code>.clone()</code></li>
+<li>Added <code>.get(index)</code></li>
+<li>Added <code>.data(name [, value])</code></li>
+<li>Added <code>$.isWindow</code>.</li>
+<li>Added <code>$.isPlainObject</code>.</li>
+<li>Renamed <code>$.isFun</code> to <code>$.isFunction</code>.</li>
+<li>Renamed <code>$.isArr</code> to <code>$.isArray</code>.</li>
+<li>Renamed <code>$.isObj</code> to <code>$.isObject</code>.</li>
+<li>Renamed <code>$.isStr</code> to <code>$.isString</code>.</li>
+<li>Renamed <code>$.isNum</code> to <code>$.isNumeric</code>.</li>
+<li>Bug fixes.</li>
+</ul>
+<h5>1.0.2</h5>
+<ul>
+<li>Fixed so context for <code>$()</code> and <code>$().find()</code> works.</li>
+</ul>
+<h5>1.0.1</h5>
+<ul>
+<li>Fixed so domready is returned when using <code>$()</code>. Added so tire object is passed into the domready callback.</li>
+</ul>
+<h5>1.0.0</h5>
+<ul>
+<li>First stable release</li>
+</ul>
+<h2 id='thanks'>Thanks</h2 id='thanks'>
+<p>We like to <strong>thank</strong> all of the <a href="http://github.com/tirejs/tire/contributors">contributors</a>. A personal thanks to <a href="http://caromill.com/">Caroline Millgårdh</a> that has helped as a sounding board and participated in writing this documentation.
+
+</p>
+<p>Tire API is based on <a href="http://jquery.com/">jQuery&#39;s Core API</a>, which is released under the <a href="https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt">MIT license</a>.
+
+</p>
+<p>Thanks to <a href="https://github.com/jeromegn">Jerome Gravel-Niquet</a> for <a href="https://github.com/jeromegn/DocumentUp">DocumentUp</a>. Tire using it to generate this documentation.
+
+</p>
+<h2 id='copyright'>Copyright</h2 id='copyright'>
+<p>Copyright 2012-2013 Fredrik Forsmo.
+Tire is released under the terms of the <a href="https://github.com/tirejs/tire/blob/master/MIT-LICENSE">MIT license</a>.
+</p>
+
+  </div>
+</div><a href="http://github.com/tirejs/tire"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://a248.e.akamai.net/camo.github.com/7afbc8b248c68eb468279e8c17986ad46549fb71/687474703a2f2f73332e616d617a6f6e6177732e636f6d2f6769746875622f726962626f6e732f666f726b6d655f72696768745f6461726b626c75655f3132313632312e706e67" alt="Fork me on GitHub"></a></body>
+</html>
