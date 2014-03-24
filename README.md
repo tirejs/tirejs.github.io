@@ -1,1 +1,1 @@
-Source for http://tirejs.com
+Source for http://tirejs.github.io
